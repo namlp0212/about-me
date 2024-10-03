@@ -6,7 +6,7 @@ import { ThemeProvider } from "next-themes";
 import Header from "@/components/Header";
 import ReactQueryProvider from "@/query/reactQuerySetup";
 import Footer from "@/components/Footer";
-import Auth0ProviderWithNavigate from "@/auth/Auth0ProviderWithNavigate";
+// import Auth0ProviderWithNavigate from "@/auth/Auth0ProviderWithNavigate";
 import { createMetadata } from "@/lib/metadata";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ReactQueryProvider>
-          <Auth0ProviderWithNavigate>
+          {/* <Auth0ProviderWithNavigate> */}
             <ThemeProvider
               attribute="class"
               defaultTheme="system"
@@ -40,7 +40,7 @@ export default function RootLayout({
               <Toaster visibleToasts={1} position="bottom-right" richColors />
               <Footer />
             </ThemeProvider>
-          </Auth0ProviderWithNavigate>
+          {/* </Auth0ProviderWithNavigate> */}
         </ReactQueryProvider>
       </body>
     </html>

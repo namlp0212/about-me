@@ -28,7 +28,7 @@ import {
 } from "../../public/assets";
 
 import {
-  SiUpwork,
+  SiFacebook,
   SiGithub,
   SiInstagram,
   SiLinkedin
@@ -37,22 +37,22 @@ import {
 
 export const SOCIALS: Props = [
   {
-    href: "https://github.com/YieGin",
+    href: "https://github.com/namlp0212",
     title: "GitHub",
     icon: SiGithub,
   },
   {
-    href: "https://www.upwork.com/freelancers/~015e9397eed4744df5?viewMode=1",
-    title: "Upwork",
-    icon: SiUpwork,
+    href: "https://www.facebook.com/profile.php?id=100024662077089&locale=vi_VN",
+    title: "Facebook",
+    icon: SiFacebook,
   },
   {
-    href: "https://www.instagram.com/belamri_yie/",
+    href: "https://www.instagram.com/namlephuong2000/",
     title: "Instagram",
     icon: SiInstagram,
   },
   {
-    href: "https://www.linkedin.com/in/islam-belamri/",
+    href: "https://www.linkedin.com/in/nam-l%C3%AA-a2a8b0327/",
     title: "Linkedin",
     icon: SiLinkedin,
   },

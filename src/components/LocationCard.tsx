@@ -3,7 +3,7 @@ import { MapPinIcon } from "lucide-react";
 import * as React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Cobe } from "../../public/assets";
+import { VietNameImg } from "../../public/assets";
 
 const LocationCard = () => {
   const itemVariants = {
@@ -26,7 +26,7 @@ const LocationCard = () => {
       <div className="flex justify-between">
         <div className="flex gap-2 items-center">
           <MapPinIcon className="size-[18px]" />
-          <p>Algeria</p>
+          <p>Vietnam</p>
         </div>
       </div>
       <div className="flex items-center justify-center">
@@ -34,7 +34,7 @@ const LocationCard = () => {
           className="w-max object-cover h-max absolute bottom-0"
           width={1000}
           height={1000}
-          src={Cobe}
+          src={VietNameImg}
           alt="test"
         />
       </div>

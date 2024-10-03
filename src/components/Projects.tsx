@@ -22,7 +22,7 @@ const Projects = () => {
     <div className="container w-full">
       <AnimatedCharacters
         className="text-4xl text-center font-bold"
-        text="Selected Projects"
+        text="Blogs"
         type="heading1"
       />
       <div className="flex items-center justify-center w-full">

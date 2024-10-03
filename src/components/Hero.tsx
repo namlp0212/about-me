@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { ProfileHero } from "../../public/assets";
+import { IntroImg } from "../../public/assets";
 import Head from "next/head";
 
 const Hero = () => {
@@ -24,19 +25,19 @@ const Hero = () => {
           >
             <h1 className="dark:text-white font-bold mb-4 text-2xl md:text-4xl sm:text-5xl lg:text-6xl lg:leading-normal dark:font-extrabold">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-teal-800">
-                Hello, I&apos;m
+                Xin chào, Mình là
               </span>
               <br />
               <TypeAnimation
                 sequence={[
-                  "Yie",
+                  "Nam",
                   1000,
-                  "a Full-Stack Developer",
+                  "một Software Engineer",
                   1000,
-                  "a Mobile Developer",
+                  "một Personal Trainer",
                   1000,
-                  "a UI/UX Designer",
-                  1000,
+                  // "a UI/UX Designer",
+                  // 1000,
                 ]}
                 wrapper="span"
                 speed={50}
@@ -44,12 +45,11 @@ const Hero = () => {
               />
             </h1>
             <p className="text-gray-800 dark:text-gray-200 text-sm sm:text-lg mb-6 lg:text-xl">
-              With a passion for creating seamless user experiences and a
-              dedication to modern, clean design, I craft full-stack solutions
-              that bring your digital visions to life. Let&apos;s build
-              something great together.
+              Đây là trang web mình xây dựng với mục đích ghi lại những trải nghiệm trong cuộc sống, 
+              từ công việc, học hành, đến những chuyện về bạn bè, gia đình. 
+              Cảm ơn bạn đã ghé qua ^^.
             </p>
-            <div className="flex items-center justify-center md:items-start md:justify-start gap-5">
+            {/* <div className="flex items-center justify-center md:items-start md:justify-start gap-5">
               <Button>
                 <Link href="/contact">Hire Me</Link>
               </Button>
@@ -62,12 +62,12 @@ const Hero = () => {
                   Download CV
                 </a>
               </Button>
-            </div>
+            </div> */}
           </motion.div>
           <div className="flex items-center justify-center mt-10 md:w-max">
             <Image
               className="object-cover w-[250px] h-[250px] lg:w-[350px] lg:h-[350px]"
-              src={ProfileHero}
+              src={IntroImg}
               width={400}
               height={400}
               priority

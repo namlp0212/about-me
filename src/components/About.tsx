@@ -45,16 +45,14 @@ const About = () => {
             <h2 className="text-sm font-light">Bio</h2>
           </div>
           <p className="text-[0.8rem] md:text-[1rem] leading-8">
-            I started in web development in 2022, learning HTML, CSS,
-            JavaScript, and then advancing to React.js and Next.js. I&apos;ve worked
-            JavaScript, and then advancing to React.js and Next.js. Ive worked
-            at Metridsh using React Native and Next.js, and served as a Project
-            Lead at a startup. My successful projects on Upwork
-            showcase my full-stack capabilities, and I recently obtained a
-            Back-End Development certification. I offer a problem-solving
-            approach and a broad skill set, ready to deliver efficient and
-            innovative solutions. I&apos;m equipped to build engaging websites and
-            strong back-ends, adding value to any team.
+            Mình năm nay {new Date().getFullYear() - 2000} tuổi. <br/>
+            Mình đang làm software engineer và mong muốn được xây dựng các hệ thống lớn. <br />
+            Mình thích tập thể dục, đặc biệt là tập gym và đá bóng. Một thứ là ký luật, một thứ là khát khao chiến thắng. <br />
+            Mình thích đọc sách, ví sách mang đến cho mình những vùng đắt mới. <br />
+            Mình không thích đồ ngọt, không thích đồ nhiều dầu mỡ, thích cơm mẹ mình nấu. <br/>
+            Bộ phim mình thích nhất, ca sỹ mình thích nhât, quyển sách mình thích nhât, ... <br/>
+            Có rất nhiều nhưng không phải là thích nhất <br/>
+            Chỉ có duy nhất anh Bảy là cấu thủ mình khâm phục nhất. <br/>
           </p>
         </motion.div>
       </div>

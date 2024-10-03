@@ -2,27 +2,58 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
+// export const NavList = [
+//   {
+//     name: "Projects",
+//     href: "/projects",
+//   },
+//   {
+//     name: "Guestbook",
+//     href: "/guestbook",
+//   },
+//   {
+//     name: "Contact",
+//     href: "/contact",
+//   },
+//   {
+//     name: "About",
+//     href: "/about",
+//   },
+//   {
+//     name: "Uses",
+//     href: "/uses",
+//   },
+// ];
+
 export const NavList = [
   {
-    name: "Projects",
-    href: "/projects",
+    name: "Blogs",
+    href: "/blogs"
   },
   {
-    name: "Guestbook",
-    href: "/guestbook",
+    name: "Work projects",
+    href: "/workProjects"
   },
-  {
-    name: "Contact",
-    href: "/contact",
-  },
+  // {
+  //   name: "Projects",
+  //   href: "/projects",
+  // },
+  // {
+  //   name: "Guestbook",
+  //   href: "/guestbook",
+  // },
+  // {
+  //   name: "Contact",
+  //   href: "/contact",
+  // },
   {
     name: "About",
     href: "/about",
   },
-  {
-    name: "Uses",
-    href: "/uses",
-  },
+  // {
+  //   name: "Uses",
+  //   href: "/uses",
+  // },
 ];
 
 const MainNav = () => {

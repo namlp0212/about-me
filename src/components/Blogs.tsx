@@ -1,0 +1,91 @@
+"use client";
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Alert, AlertDescription } from "./ui/alert";
+import { RocketIcon } from "lucide-react";
+import { Badge } from "./ui/badge";
+import projectsList from "@/utlis/projectsList";
+import blogsList from "@/utlis/blogsList";
+import AnimatedCharacters from "@/utlis/AnimatedCharacters";
+import { motion } from "framer-motion";
+
+const Blogs = () => {
+  const itemVariants = {
+    offscreen: { opacity: 0, y: 50 },
+    onscreen: (index: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: index * 0.2, duration: 0.3 },
+    }),
+  };
+  return (
+    <div className="container w-full">
+      <AnimatedCharacters
+        className="text-4xl text-center font-bold"
+        text="Blogs"
+        type="heading1"
+      />
+      <div className="flex items-center justify-center w-full">
+        <div className="mt-12 grid xl:grid-cols-2 gap-5">
+          {blogsList.map((study, index) => (
+            <motion.div
+              variants={itemVariants}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.2 }}
+              custom={index}
+              key={index}
+              className="rounded-xl p-5 shadow-feature-card dark:shadow-feature-card-dark border-2 w-full"
+            >
+              <div className="flex flex-col md:flex-row gap-5">
+                <div className="flex flex-col md:w-1/2">
+                  <div className="flex items-center gap-2 mb-5">
+                    <study.icon />
+                    <p className="text-1xl font-bold">{study.title}</p>
+                  </div>
+                  <Link href={`/project/${study.subtitle}`}>
+                    <Image
+                      className="rounded-md object-cover h-[300px] w-full"
+                      sizes="(max-width: 768px) 350px, 500px"
+                      src={study.imgSrc}
+                      width={500}
+                      height={500}
+                      priority
+                      alt={study.subtitle}
+                    />
+                  </Link>
+                </div>
+                <div className="md:w-1/2 md:mt-10 flex flex-col gap-y-3">
+                  <AnimatedCharacters
+                    className="text-2xl font-bold"
+                    type="heading2"
+                    text={study.subtitle}
+                  />
+                  <p className="text-[0.8rem] line-clamp-5">
+                    {study.shortDescription}
+                  </p>
+                  <Link target="_blank" href={study.websiteLink}>
+                    <Alert className="p-2 hover:underline">
+                      <AlertDescription className="font-semibold tracking-wide">
+                        Explore Detail
+                      </AlertDescription>
+                      <RocketIcon className="h-4 w-4" />
+                    </Alert>
+                  </Link>
+                  <div className="flex flex-wrap gap-2">
+                    {study.skills.map((skill, skillIndex) => (
+                      <Badge key={skillIndex}>{skill}</Badge>
+                    ))}
+                  </div> 
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Blogs;

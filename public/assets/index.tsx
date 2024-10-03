@@ -50,3 +50,20 @@ export { default as BiteZHero } from "./Images/bitezhero.webp";
 export { default as BookoeHero } from "./Images/bookoehero.webp";
 export { default as InpuctHero } from "./Images/inpucthero.webp";
 export { default as VanguardEliteHero } from "./Images/vanguardelitehero.webp";
+
+// Blogs
+export { default as ConfigServerImg } from "./Images/ConfigService.jpg";
+export { default as FitnessAssesmentImg } from "./Images/FitnessAssesment.jpeg";
+export { default as GateWayServiceImg } from "./Images/GateWayService.png";
+export { default as EventDrivenImg } from "./Images/EventDriven.jpg";
+export { default as ELKStackImg } from "./Images/ELK_Stack.png";
+export { default as LogstashImg } from "./Images/Logstash.png";
+export { default as ElasticsearchImg } from "./Images/Elasticsearch.jpeg";
+export { default as AOPImg } from "./Images/AOP.png";
+export { default as GymMistakeImg } from "./Images/GymMistake.jpg";
+
+// Location
+export { default as VietNameImg } from "./Images/VietNam.jpg"
+
+// Bio
+export { default as IntroImg } from "./Images/Intro.png";

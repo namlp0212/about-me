@@ -26,6 +26,19 @@ export type CaseStudy = {
   skills: string[];
 }
 
+export type BlogStudy = {
+  imgSrc: any;
+  ProjectImg: any;
+  icon: React.ElementType;
+  title: string;
+  Summary: string;
+  subtitle: string;
+  shortDescription: string;
+  description: string;
+  websiteLink: string;
+  skills: string[];
+}
+
 export type Props = Array<{
   href: string;
   title: string;
